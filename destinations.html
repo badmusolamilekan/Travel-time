@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destination</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="destination.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      #menu-toggle {
+        display: none;
+      }
+      #menu-toggle:checked ~ #mobile-menu {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="relative h-[480px] md:h-[450px] lg:h-[370px]">
+      <div
+        class="absolute bg-[url('./images/img1.JPG')] bg-cover bg-center inset-0 brightness-[60%]"
+      ></div>
+      <nav class="w-full relative z-10">
+        <div
+          class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"
+        >
+          <a href="index.html" class="text-white text-2xl font-medium"
+            >TravelTime</a
+          >
+
+          <ul
+            class="hidden lg:flex items-center gap-1 text-sm font-medium text-white"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="px-3 py-2 hover:text-[#e8412a] transition-colors"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="px-3 py-2 hover:text-[#e8412a] transition-colors"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="destinations.html"
+                class="px-3 py-2 hover:text-[#e8412a] transition-colors"
+                >Destinations</a
+              >
+            </li>
+            <li>
+              <a
+                href="tours.html"
+                class="px-3 py-2 hover:text-[#e8412a] transition-colors"
+                >Tours</a
+              >
+            </li>
+            <li>
+              <a
+                href="gallery.html"
+                class="px-3 py-2 hover:text-[#e8412a] transition-colors"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="blog.html"
+                class="px-3 py-2 hover:text-[#e8412a] transition-colors"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="booking.html"
+                class="px-3 py-2 hover:text-[#e74c3c] transition-colors"
+                >Booking</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="px-3 py-2 text-white font-semibold"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="bg-[#f95e4d] px-4 py-2 rounded-lg text-xs font-semibold ml-2"
+                >Get Started</a
+              >
+            </li>
+          </ul>
+
+          <label
+            for="menu-toggle"
+            class="lg:hidden text-white text-2xl cursor-pointer"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </label>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" />
+        <div
+          id="mobile-menu"
+          class="hidden lg:hidden bg-black/90 px-6 py-4 absolute w-full z-50"
+        >
+          <ul class="flex flex-col gap-3 text-sm font-medium text-gray-300">
+            <li>
+              <a href="index.html" class="hover:text-[#e74c3c] block py-2"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="about.html" class="hover:text-[#e74c3c] block py-2"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="destinations.html"
+                class="hover:text-[#e74c3c] block py-2"
+                >Destinations</a
+              >
+            </li>
+            <li>
+              <a href="tours.html" class="hover:text-[#e74c3c] block py-2"
+                >Tours</a
+              >
+            </li>
+            <li>
+              <a href="gallery.html" class="hover:text-[#e74c3c] block py-2"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a href="blog.html" class="hover:text-[#e74c3c] block py-2"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a href="booking.html" class="hover:text-[#e74c3c] block py-2"
+                >Booking</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="text-white font-semibold block py-2"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="p-20 absolute inset-0 text-white">
+        <h2 class="mt-20 text-center font-bold text-4xl">Destinations</h2>
+        <p class="mt-5 text-center">
+          Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat
+          quibusdam quia assumenda numquam molestias.
+        </p>
+        <ul class="text-center mt-5">
+          <a href="" class="text-red-400">Home</a>
+          <a href="">/</a>
+          <a href="">Destinations</a>
+        </ul>
+      </div>
+    </section>
+    <section class="mt-[40px]">
+      <h1 class="text-center font-normal text-[#200fod] text-[32px]">
+        Discover Amazing Travel Destinations
+      </h1>
+      <p class="text-center mx-[80px] md:mx-[200px] lg:mx-[260px]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+    </section>
+
+    <div
+      class="text-center justify-items-center pt-[40px] mb-[40px] mx-[200px] md:mx-[200px] lg:mx-[200px]"
+    >
+      <button
+        class="flex gap-2 bg-[#ffffff] p-[8px] rounded-full px-[15px] drop-shadow-xl"
+      >
+        <p class="p-[10px] rounded-full px-[20px] bg-red-500">All</p>
+        <p class="p-[10px] rounded-full px-[20px] hover:bg-red-500">Asia</p>
+        <p class="p-[10px] rounded-full px-[15px] hover:bg-red-500">Europe</p>
+        <p class="p-[10px] rounded-full px-[15px] hover:bg-red-500">Africa</p>
+        <p class="p-[10px] rounded-full px-[15px] hover:bg-red-500">Americas</p>
+      </button>
+    </div>
+
+    <section
+      class="relative mx-[40px] md:-[40px] lg:-[80px] mb-[20px] transition duration-200 overflow-hidden holder"
+    >
+      <img
+        src="images/france destination.webp"
+        alt=""
+        class="w-full h-[500px] mb-[50px] object-cover rounded-xl xoomer"
+      />
+      <!-- holder xoomer css naming -->
+      <!-- back background overlay -->
+      <div class="absolute inset-0 bg-black/50 rounded-xl"></div>
+
+      <div class="absolute left-3 bottom-10">
+        <button
+          class="bg-red-500 px-4 py-2 text-sm font-medium rounded-full mb-4 text-white"
+        >
+          Featured
+        </button>
+        <h3 class="font-bold text-white text-2xl mb-4">Paris,France</h3>
+        <p class="text-white text-sm font-medium mb-4">
+          City of lights and romance with iconic landmarks and world-class
+          museums
+        </p>
+        <p class="text-white text-sm font-medium mb-8 flex gap-2">
+          <i class="fa-solid fa-location-dot text-sm"></i>15 Tours
+        </p>
+        <p class="text-white text-sm font-medium mb-4 flex gap-2">
+          Explore Now <i class="fa-solid fa-arrow-right-long text-sm"></i>
+        </p>
+      </div>
+      <div class="absolute right-4 bottom-11">
+        <p class="text-white text-sm font-medium">From $1,299</p>
+      </div>
+    </section>
+
+    <section
+      class="mx-[40px] md:-[40px] lg:-[80px] mb-[50px] grid sm:grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-5"
+    >
+      <div
+        class="relative w-[100%] h-[220px] holder overflow-hidden rounded-xl"
+      >
+        <img
+          src="images/bali destination.webp"
+          alt=""
+          class="w-full h-full object-cover rounded-xl xoomer"
+        />
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="absolute left-3 bottom-2">
+          <button
+            class="bg-[#69DED5] px-4 py-2 text-sm font-medium rounded-full mb-4 text-white"
+          >
+            Popular
+          </button>
+          <p class="text-white text-sm font-medium mb-3">Bali,Indonesia</p>
+          <p class="text-white text-light font-medium mb-3">8 Tours</p>
+        </div>
+        <div class="absolute right-3 bottom-2">
+          <p class="text-white text-sm font-medium">$899</p>
+        </div>
+      </div>
+
+      <div
+        class="relative w-[100%] h-[220px] holder overflow-hidden rounded-xl"
+      >
+        <img
+          src="images/costa rica destination.webp"
+          alt=""
+          class="w-full h-full object-cover rounded-xl xoomer"
+        />
+        <div class="absolute inset-0 bg-black/50 rounded-xl"></div>
+        <div class="absolute left-3 bottom-2">
+          <button
+            class="bg-[#FFAF5F] px-4 py-2 text-sm font-medium rounded-full mb-4 text-white"
+          >
+            Adventure
+          </button>
+          <p class="text-white text-sm font-medium mb-3">Costa Rica</p>
+          <p class="text-white text-light font-medium mb-3">6 Tours</p>
+        </div>
+        <div class="absolute right-3 bottom-2">
+          <p class="text-white text-sm font-medium">$899</p>
+        </div>
+      </div>
+
+      <div
+        class="relative w-[100%] h-[220px] holder overflow-hidden rounded-xl"
+      >
+        <img
+          src="images/egypt destination.webp"
+          alt=""
+          class="w-full h-full object-cover rounded-xl xoomer"
+        />
+        <div class="absolute inset-0 bg-black/50 rounded-xl"></div>
+        <div class="absolute left-3 bottom-2">
+          <button
+            class="bg-[#D4628D] px-4 py-2 text-sm font-medium rounded-full mb-4 text-white"
+          >
+            Culture
+          </button>
+          <p class="text-white text-sm font-medium mb-3">Cairo, Egypt</p>
+          <p class="text-white text-light font-medium mb-3">7 Tours</p>
+        </div>
+        <div class="absolute right-3 bottom-2">
+          <p class="text-white text-sm font-medium">$899</p>
+        </div>
+      </div>
+
+      <div
+        class="relative w-[100%] h-[220px] holder overflow-hidden rounded-xl"
+      >
+        <img
+          src="images/singapore destination.webp"
+          alt=""
+          class="w-full h-full object-cover rounded-xl xoomer"
+        />
+        <div class="absolute inset-0 bg-black/50 rounded-xl"></div>
+        <div class="absolute left-3 bottom-2">
+          <button
+            class="bg-[#8274EB] px-4 py-2 text-sm font-medium rounded-full mb-4 text-white"
+          >
+            Luxury
+          </button>
+          <p class="text-white text-sm font-medium mb-3">Singapore</p>
+          <p class="text-white text-light font-medium mb-3">12 Tours</p>
+        </div>
+        <div class="absolute right-3 bottom-2">
+          <p class="text-white text-sm font-medium">$899</p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="mb-[50px] mx-[40px] md:-[40px] lg:-[80px] grid sm:grid-cols-1 lg:grid-cols-3 md:grid-cols-1 gap-5"
+    >
+      <div
+        class="relative h-[300px] w-[100%] rounded-xl holder overflow-hidden"
+      >
+        <img
+          src="images/greece destination.webp"
+          alt=""
+          class="w-full h-full object-cover rounded-xl xoomer"
+        />
+        <div class="absolute inset-0 bg-black/50 rounded-xl"></div>
+        <div class="absolute left-3 bottom-2">
+          <button
+            class="bg-[#FF87B2] px-4 py-2 text-sm font-medium rounded-full mb-4 text-white"
+          >
+            Luxury
+          </button>
+          <h2 class="text-white text-[24px] font-bold mb-3">
+            Santorini, Greece
+          </h2>
+          <p class="text-white text-light font-medium mb-3">
+            Stunning sunsets and white-washed buildings overlooking the Aegean
+            Sea
+          </p>
+          <p class="text-white text-[14px] font-normal mb-3">
+            <i class="fa-regular fa-heart"></i>10 Tours
+          </p>
+        </div>
+        <div class="absolute right-3 bottom-2">
+          <p class="text-white text-sm font-medium">From $1,599</p>
+        </div>
+      </div>
+
+      <div
+        class="relative h-[300px] w-[100%] rounded-xl holder overflow-hidden"
+      >
+        <img
+          src="images/rio destination.webp"
+          alt=""
+          class="w-full h-full object-cover rounded-xl xoomer"
+        />
+        <div class="absolute inset-0 bg-black/50 rounded-xl"></div>
+        <div class="absolute left-3 bottom-2">
+          <button
+            class="bg-[#FFAC5A] px-4 py-2 text-sm font-medium rounded-full mb-4 text-white"
+          >
+            Vibrant
+          </button>
+          <h2 class="text-white text-[24px] font-bold mb-3">Rio de Janeiro</h2>
+          <p class="text-white text-light font-medium mb-3">
+            Spectacular beaches, vibrant carnival culture, and iconic Christ
+            statue
+          </p>
+          <p class="text-white text-[14px] font-normal mb-3">
+            <i class="fa-regular fa-heart"></i>9 Tours
+          </p>
+        </div>
+        <div class="absolute right-3 bottom-2">
+          <p class="text-white text-sm font-medium">From $1,799</p>
+        </div>
+      </div>
+
+      <div
+        class="relative h-[300px] w-[100%] rounded-xl holder overflow-hidden"
+      >
+        <img
+          src="images/capetown destination.webp"
+          alt=""
+          class="w-full h-full object-cover rounded-xl xoomer"
+        />
+        <div class="absolute inset-0 bg-black/50 rounded-xl"></div>
+        <div class="absolute left-3 bottom-2">
+          <button
+            class="bg-[#00C6A0] px-4 py-2 text-sm font-medium rounded-full mb-4 text-white"
+          >
+            Scenic
+          </button>
+          <h2 class="text-white text-[24px] font-bold mb-3">Cape Town</h2>
+          <p class="text-white text-light font-medium mb-3">
+            Dramatic mountains, pristine beaches, and world-renowned wine
+            regions
+          </p>
+          <p class="text-white text-[14px] font-normal mb-3">
+            <i class="fa-solid fa-camera"></i>11 Tours
+          </p>
+        </div>
+        <div class="absolute right-3 bottom-2">
+          <p class="text-white text-sm font-medium">From $1,699</p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-white shadow-[0px_1px_3px_0px_rgba(0,0,0,0.02),0px_0px_0px_1px_rgba(27,31,35,0.15)] mx-[20px] md:mx-[40px] lg:mx-[300px] p-6 rounded-xl mb-[50px]"
+    >
+      <div
+        class="w-[500px] md:w-[500px] lg:w-[600px] h-[200px] mx-auto text-center"
+      >
+        <h1
+          class="text-black text-[20px] md:text-[20px] lg:text-[24px] font-bold mb-3"
+        >
+          Ready to Start Your Journey?
+        </h1>
+        <p class="mb-[20px] text-[12px] md:text-[16px] lg:text-[20px]">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          <br />
+          dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.
+        </p>
+        <button
+          class="bg-red-500 px-4 py-2 text-sm font-medium rounded-full mb-4 text-white flex gap-2 mx-auto"
+        >
+          View All Destinations
+          <i class="fa-solid fa-arrow-right-long text-sm"></i>
+        </button>
+      </div>
+    </section>
+
+    <a
+      href="index.html"
+      class="fixed bottom-4 right-4 bg-[#e74c3c] hover:bg-[#c0392b] w-10 h-10 rounded-full flex items-center justify-center text-white transition-colors shadow-lg"
+    >
+      <i class="fa-solid fa-arrow-up text-sm"></i>
+    </a>
+    <footer class="bg-[#161616] text-white">
+      <div class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div>
+            <h2 class="text-3xl font-bold mb-5">TravelTime</h2>
+            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia curae. Donec velit neque auctor sit amet aliquam
+              vel ullamcorper sit amet ligula.
+            </p>
+            <p class="font-semibold text-base mb-3">Stay Updated</p>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="flex-1 bg-[#2a2a2a] border border-white/10 border-r-0 rounded-l-full px-4 py-2.5 text-sm text-white placeholder-gray-600 outline-none focus:border-[#e8412a]/50"
+              />
+              <button
+                class="bg-red-500 hover:bg-[#c93520] px-5 rounded-r-full transition-colors"
+              >
+                <i
+                  class="fa-regular fa-paper-plane text-white text-[20px] text-center"
+                ></i>
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <h5 class="text-base font-semibold mb-2">Company</h5>
+            <div class="w-8 h-0.5 bg-[#e8412a] mb-5"></div>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >Press</a
+                >
+              </li>
+              <li>
+                <a
+                  href="blog.html"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 class="text-base font-semibold mb-2">Solutions</h5>
+            <div class="w-8 h-0.5 bg-[#e8412a] mb-5"></div>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >Digital Strategy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >Cloud Computing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >Data Analytics</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >AI Solutions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >Cybersecurity</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 class="text-base font-semibold mb-2">Get in Touch</h5>
+            <div class="w-8 h-0.5 bg-[#e8412a] mb-5"></div>
+
+            <div class="flex items-start gap-3 mb-4">
+              <div
+                class="w-10 h-10 rounded-full bg-[#444444]/20 flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fa-solid fa-location-dot text-red-500 text-sm"></i>
+              </div>
+              <span class="text-gray-400 text-sm leading-relaxed">
+                2847 Maple Avenue<br />
+                Los Angeles, CA 90210<br />
+                United States
+              </span>
+            </div>
+
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-10 h-10 rounded-full bg-[#444444]/20 flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fa-solid fa-phone text-red-500 text-sm"></i>
+              </div>
+              <span class="text-gray-400 text-sm">+1 (555) 987-6543</span>
+            </div>
+
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="w-10 h-10 rounded-full bg-[#444444]/20 flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fa-regular fa-envelope text-red-500 text-sm"></i>
+              </div>
+              <span class="text-gray-400 text-sm">contact@example.com</span>
+            </div>
+
+            <div class="flex gap-3">
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-gray-400 hover:bg-[#e8412a] hover:border-[#e8412a] hover:text-white transition-all text-sm"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-gray-400 hover:bg-[#e8412a] hover:border-[#e8412a] hover:text-white transition-all text-sm"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-gray-400 hover:bg-[#e8412a] hover:border-[#e8412a] hover:text-white transition-all text-sm"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-gray-400 hover:bg-[#e8412a] hover:border-[#e8412a] hover:text-white transition-all text-sm"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-gray-400 hover:bg-[#e8412a] hover:border-[#e8412a] hover:text-white transition-all text-sm"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#0f0f0f] border-t border-white/5">
+        <div
+          class="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-gray-500"
+        >
+          <p class="text-[12px]">
+            &copy; Copyright
+            <span class="text-white text-[12px] font-medium">MyWebsite</span>
+            All Rights Reserved
+          </p>
+          <div class="flex flex-col md:flex-row text-[12px] items-center gap-4">
+            <div class="flex gap-4">
+              <a href="#" class="hover:text-white transition-colors"
+                >Privacy Policy</a
+              >
+              <a href="#" class="hover:text-white transition-colors"
+                >Terms of Service</a
+              >
+              <a href="#" class="hover:text-white transition-colors"
+                >Cookie Policy</a
+              >
+            </div>
+            <p>
+              Designed by
+              <a
+                href="https://bootstrapmade.com"
+                class="text-[#e8412a] hover:underline"
+                >BootstrapMade</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

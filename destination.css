@@ -1,0 +1,7 @@
+.holder:hover .xoomer{
+    transform: scale(1.1);
+    /* height: 3000px; */
+}
+.xoomer {
+  transition: transform 0.3s ease;
+}
