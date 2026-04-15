@@ -1,0 +1,930 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog-TravelTime Bootstrap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+     <style>
+      #menu-toggle {
+        display: none;
+      }
+      #menu-toggle:checked ~ #mobile-menu {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="relative h-[480px] md:h-[450px] lg:h-[350px]">
+      <div
+        class="absolute bg-[url('./images/img1.JPG')] bg-cover bg-center inset-0 brightness-[60%]"
+      ></div>
+       <nav class="w-full relative z-10">
+        <div
+          class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"
+        >
+          <a href="index.html" class="text-white text-2xl font-medium"
+            >TravelTime</a
+          >
+
+          <ul
+            class="hidden lg:flex items-center gap-1 text-sm font-medium text-white"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="px-3 py-2 hover:text-[#e8412a] transition-colors"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="px-3 py-2 hover:text-[#e8412a] transition-colors"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="destinations.html"
+                class="px-3 py-2 hover:text-[#e8412a] transition-colors"
+                >Destinations</a
+              >
+            </li>
+            <li>
+              <a
+                href="tours.html"
+                class="px-3 py-2 hover:text-[#e8412a] transition-colors"
+                >Tours</a
+              >
+            </li>
+            <li>
+              <a
+                href="gallery.html"
+                class="px-3 py-2 hover:text-[#e8412a] transition-colors"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="blog.html"
+                class="px-3 py-2 hover:text-[#e8412a] transition-colors"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="booking.html"
+                class="px-3 py-2 hover:text-[#e74c3c] transition-colors"
+                >Booking</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="px-3 py-2 text-white font-semibold"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="bg-[#f95e4d] px-4 py-2 rounded-lg text-xs font-semibold ml-2"
+                >Get Started</a
+              >
+            </li>
+          </ul>
+
+          <label
+            for="menu-toggle"
+            class="lg:hidden text-white text-2xl cursor-pointer"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </label>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" />
+        <div
+          id="mobile-menu"
+          class="hidden lg:hidden bg-black/90 px-6 py-4 absolute w-full z-50"
+        >
+          <ul class="flex flex-col gap-3 text-sm font-medium text-gray-300">
+            <li>
+              <a href="index.html" class="hover:text-[#e74c3c] block py-2"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="about.html" class="hover:text-[#e74c3c] block py-2"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="destinations.html"
+                class="hover:text-[#e74c3c] block py-2"
+                >Destinations</a
+              >
+            </li>
+            <li>
+              <a href="tours.html" class="hover:text-[#e74c3c] block py-2"
+                >Tours</a
+              >
+            </li>
+            <li>
+              <a href="gallery.html" class="hover:text-[#e74c3c] block py-2"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a href="blog.html" class="hover:text-[#e74c3c] block py-2"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a href="booking.html" class="hover:text-[#e74c3c] block py-2"
+                >Booking</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="text-white font-semibold block py-2"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <a
+        href="index.html"
+        class="fixed bottom-4 right-4 bg-[#e74c3c] hover:bg-[#c0392b] w-10 h-10 rounded-full flex items-center justify-center text-white transition-colors shadow-lg"
+      >
+        <i class="fa-solid fa-arrow-up text-sm"></i>
+      </a>
+      <div class="p-20 absolute inset-0 text-white">
+        <h2 class="mt-20 text-center font-bold text-4xl">Blog</h2>
+        <p class="mt-5 text-center">
+          Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat
+          quibusdam quia assumenda numquam molestias.
+        </p>
+        <ul class="text-center mt-5">
+          <a href="" class="text-red-400">Home</a>
+          <a href="">/</a>
+          <a href="">Blog</a>
+        </ul>
+      </div>
+    </section>
+
+    <a
+      href="About.html"
+      class="fixed bottom-4 right-4 bg-[#e74c3c] hover:bg-[#c0392b] w-10 h-10 rounded-full flex items-center justify-center text-white transition-colors shadow-lg"
+    >
+      <i class="fa-solid fa-arrow-up text-sm"></i>
+    </a>
+
+    <section
+      class="flex lg:flex-row flex-col lg:pt-20 md:pt-10 pt-6 px-4 md:px-8 lg:px-16 gap-10"
+    >
+      <div class="lg:w-[70%] w-full">
+        <div class="relative rounded-lg overflow-hidden">
+          <img
+            src="./images/blogimage1.webp"
+            alt=""
+            class="w-full h-[280px] sm:h-[400px] md:h-[450px] object-cover rounded-lg"
+          />
+          <div
+            class="absolute bottom-0 left-0 w-full p-4 md:p-6 bg-gradient-to-t from-black to-transparent"
+          >
+            <div class="flex gap-3 pb-3">
+              <p class="bg-red-500 rounded-full px-4 py-1 text-white text-sm">
+                Business
+              </p>
+              <p class="text-gray-300 text-sm">01/30/2024</p>
+            </div>
+            <p class="text-white text-xl md:text-3xl pb-2 leading-snug">
+              Optimizing Strategic Initiatives Through Cross-Functional
+              Collaboration
+            </p>
+            <p class="text-white text-sm mb-2 hidden sm:block">
+              Leveraging core competencies to drive sustainable growth and
+              maximize stakeholder value through innovative solutions and
+              market-driven approaches.
+            </p>
+            <a href="blog.html">
+              <p class="text-white text-sm">
+                by <span class="text-red-400">Jennifer Mitchell</span>
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8">
+          <div class="flex flex-col">
+            <img
+              src="./images/blogimage2.webp"
+              alt=""
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <div class="pt-4">
+              <div class="flex items-center gap-3 mb-3">
+                <span
+                  class="bg-red-500 rounded-full px-4 py-1 text-white text-xs"
+                  >Politics</span
+                >
+                <span class="text-sm text-gray-500">03/21/2024</span>
+              </div>
+              <a href="blog.html">
+                <p
+                  class="text-lg font-semibold leading-snug hover:text-red-500 mb-2"
+                >
+                  Implementing Agile Methodologies for Enhanced Business
+                  Performance
+                </p>
+              </a>
+              <a href="blog.html">
+                <p class="text-sm text-gray-500">
+                  by <span class="text-red-400">Robert Anderson</span>
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <img
+              src="./images/blogimage3.webp"
+              alt=""
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <div class="pt-4">
+              <div class="flex items-center gap-3 mb-3">
+                <span
+                  class="bg-red-500 rounded-full px-4 py-1 text-white text-xs"
+                  >Business</span
+                >
+                <span class="text-sm text-gray-500">01/30/2024</span>
+              </div>
+              <a href="blog.html">
+                <p
+                  class="text-lg font-semibold leading-snug hover:text-red-500 mb-2"
+                >
+                  Streamlining Operations Through Digital Transformation
+                  Solutions
+                </p>
+              </a>
+              <a href="blog.html">
+                <p class="text-sm text-gray-500">
+                  by <span class="text-red-400">Sarah Thompson</span>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:w-[30%] w-full">
+        <div class="grid  md:grid-cols-3 grid-cols-3 lg:grid-cols-2 gap-3 mb-6">
+          <a href=""
+            ><button
+              class="bg-red-500 text-white px-5 py-1.5 rounded-full text-sm"
+            >
+              Top stories
+            </button></a
+          >
+          <a href=""
+            ><button class="hover:text-red-400 text-sm">
+              Trending News
+            </button></a
+          >
+          <a href=""
+            ><button class="hover:text-red-400 text-sm ml-3">Latest News</button></a
+          >
+        </div>
+
+        <div class="flex gap-4 items-start py-4">
+          <img
+            src="./images/blogimage4.webp"
+            alt=""
+            class="w-24 h-20 object-cover rounded-lg shrink-0"
+          />
+          <div>
+            <span class="bg-red-400 text-white text-xs px-3 py-1 rounded-full"
+              >Science</span
+            >
+            <a href=""
+              ><h3
+                class="text-sm font-semibold mt-2 hover:text-red-400 leading-snug"
+              >
+                Implementing Sustainable Business Practices for Long-term Growth
+              </h3></a
+            >
+            <p class="mt-1 text-xs text-gray-500">
+              by <span class="text-red-500">Alexandra Foster</span>
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="flex gap-4 items-start py-4">
+          <img
+            src="./images/blogimage5.webp"
+            alt=""
+            class="w-24 h-20 object-cover rounded-lg shrink-0"
+          />
+          <div>
+            <span class="bg-red-400 text-white text-xs px-3 py-1 rounded-full"
+              >Style</span
+            >
+            <a href=""
+              ><h3
+                class="text-sm font-semibold mt-2 hover:text-red-400 leading-snug"
+              >
+                Optimizing Supply Chain Management Through Technology
+                Integration
+              </h3></a
+            >
+            <p class="mt-1 text-xs text-gray-500">
+              by <span class="text-red-500">Christopher Wells</span>
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="flex gap-4 items-start py-4">
+          <img
+            src="./images/blogimage6.webp"
+            alt=""
+            class="w-24 h-20 object-cover rounded-lg shrink-0"
+          />
+          <div>
+            <span class="bg-red-400 text-white text-xs px-3 py-1 rounded-full"
+              >Politics</span
+            >
+            <a href=""
+              ><h3
+                class="text-sm font-semibold mt-2 hover:text-red-400 leading-snug"
+              >
+                Developing Strategic Partnerships for Market Expansion
+              </h3></a
+            >
+            <p class="mt-1 text-xs text-gray-500">
+              by <span class="text-red-500">Victoria Palmer</span>
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="flex gap-4 items-start py-4">
+          <img
+            src="./images/blogimage7.webp"
+            alt=""
+            class="w-24 h-20 object-cover rounded-lg shrink-0"
+          />
+          <div>
+            <span class="bg-red-400 text-white text-xs px-3 py-1 rounded-full"
+              >Science</span
+            >
+            <a href=""
+              ><h3
+                class="text-sm font-semibold mt-2 hover:text-red-400 leading-snug"
+              >
+                Transforming Business Models Through Digital Innovation
+              </h3></a
+            >
+            <p class="mt-1 text-xs text-gray-500">
+              by <span class="text-red-500">Rachel Stevens</span>
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="flex gap-4 items-start py-4">
+          <img
+            src="./images/blogimage8.webp"
+            alt=""
+            class="w-24 h-20 object-cover rounded-lg shrink-0"
+          />
+          <div>
+            <span class="bg-red-400 text-white text-xs px-3 py-1 rounded-full"
+              >Science</span
+            >
+            <a href=""
+              ><h3
+                class="text-sm font-semibold mt-2 hover:text-red-400 leading-snug"
+              >
+                Strategic Investment Planning for Sustainable Growth
+              </h3></a
+            >
+            <p class="mt-1 text-xs text-gray-500">
+              by <span class="text-red-500">Andrew Phillips</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 md:px-6 lg:px-20 pt-16 pb-10">
+      <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
+        <div
+          class="bg-white rounded-xl shadow-sm border border-gray-100 hovereffs"
+        >
+          <div class="relative">
+            <img
+              src="./images/blogimage9.webp"
+              alt=""
+              class="w-full md:h-[400px] lg:h-[200px] object-cover hover:scale-105 transition-all duration-300"
+            />
+            <div
+              class="absolute bottom-[-30px] left-4 bg-red-500 text-white text-center rounded-md px-3 py-2 min-w-[56px]"
+            >
+              <div class="text-2xl font-semibold">12</div>
+              <div class="text-xs mt-1">December</div>
+            </div>
+          </div>
+          <div
+            class="px-5 pt-10 pb-1 flex items-center gap-2 text-sm text-gray-400"
+          >
+            <span>Maria Doe</span><span>/</span>
+            <span
+              ><i class="fa-regular fa-folder-closed pr-1 text-red-400"></i
+              >Sports</span
+            >
+          </div>
+          <div class="px-5 pt-3 pb-6">
+            <a href=""
+              ><h3 class="text-xl font-medium mb-4 changetx">
+                Dolorum optio tempore voluptas dignissimos
+              </h3></a
+            >
+            <a
+              href="#"
+              class="text-sm text-gray-800 inline-flex items-center gap-1 changetx"
+              >Read More →</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hovereffs"
+        >
+          <div class="relative">
+            <img
+              src="./images/blogimage10.webp"
+              alt=""
+              class="w-full md:h-[400px] lg:h-[200px] object-cover hover:scale-105 transition-all duration-300"
+            />
+            <div
+              class="absolute bottom-[-30px] left-4 bg-red-500 text-white text-center rounded-md px-3 py-2 min-w-[56px]"
+            >
+              <div class="text-2xl font-semibold">19</div>
+              <div class="text-xs pt-1">March</div>
+            </div>
+          </div>
+          <div
+            class="px-5 pt-10 pb-1 flex items-center gap-2 text-sm text-gray-400"
+          >
+            <span>Julia Parker</span><span>/</span>
+            <span
+              ><i class="fa-regular fa-folder-closed pr-1 text-red-400"></i
+              >Economics</span
+            >
+          </div>
+          <div class="px-5 pt-3 pb-6">
+            <a href=""
+              ><h3 class="text-xl font-medium leading-snug mb-4 changetx">
+                Nisi magni odit consequatur autem nulla dolorem
+              </h3></a
+            >
+            <a
+              href="#"
+              class="text-sm text-gray-800 inline-flex items-center gap-1 changetx"
+              >Read More →</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hovereffs"
+        >
+          <div class="relative">
+            <img
+              src="./images/blogimage11.webp"
+              alt=""
+              class="w-full md:h-[400px] lg:h-[200px] object-cover hover:scale-105 transition-all duration-300"
+            />
+            <div
+              class="absolute bottom-[-30px] left-4 bg-red-500 text-white text-center rounded-md px-3 py-2 min-w-[56px]"
+            >
+              <div class="text-2xl font-semibold">24</div>
+              <div class="text-xs mt-1">June</div>
+            </div>
+          </div>
+          <div
+            class="px-5 pt-10 pb-1 flex items-center gap-2 text-sm text-gray-400"
+          >
+            <span>Maria Doe</span><span>/</span>
+            <span
+              ><i class="fa-regular fa-folder-closed pr-1 text-red-400"></i
+              >Sports</span
+            >
+          </div>
+          <div class="px-5 pt-3 pb-6">
+            <a href=""
+              ><h3 class="text-xl font-medium leading-snug mb-4 changetx">
+                Possimus soluta ut id suscipit ea ut in quo quia et soluta
+                libero sit sint.
+              </h3></a
+            >
+            <a
+              href="#"
+              class="text-sm text-gray-800 inline-flex items-center gap-1 changetx"
+              >Read More →</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hovereffs"
+        >
+          <div class="relative">
+            <img
+              src="./images/blogimage12.webp"
+              alt=""
+              class="w-full md:h-[400px] lg:h-[200px] object-cover hover:scale-105 transition-all duration-300"
+            />
+            <div
+              class="absolute bottom-[-30px] left-4 bg-red-500 text-white text-center rounded-md px-3 py-2 min-w-[56px]"
+            >
+              <div class="text-2xl font-semibold">08</div>
+              <div class="text-xs pt-1">January</div>
+            </div>
+          </div>
+          <div
+            class="px-5 pt-10 pb-1 flex items-center gap-2 text-sm text-gray-400"
+          >
+            <span>Maria Doe</span><span>/</span>
+            <span
+              ><i class="fa-regular fa-folder-closed pr-1 text-red-400"></i
+              >Travel</span
+            >
+          </div>
+          <div class="px-5 pt-3 pb-6">
+            <a href=""
+              ><h3 class="text-xl font-medium leading-snug pb-4 changetx">
+                Non rem rerum nam cum quo minus explicabo eius exercitationem.
+              </h3></a
+            >
+            <a
+              href="#"
+              class="text-sm text-gray-800 inline-flex items-center gap-1 changetx"
+              >Read More →</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hovereffs"
+        >
+          <div class="relative">
+            <img
+              src="./images/blogimage13.webp"
+              alt=""
+              class="w-full md:h-[400px] lg:h-[200px] object-cover hover:scale-105 transition-all duration-300"
+            />
+            <div
+              class="absolute bottom-[-30px] left-4 bg-red-500 text-white text-center rounded-md px-3 py-2 min-w-[56px]"
+            >
+              <div class="text-2xl font-semibold">15</div>
+              <div class="text-xs pt-1">February</div>
+            </div>
+          </div>
+          <div
+            class="px-5 pt-10 pb-1 flex items-center gap-2 text-sm text-gray-400"
+          >
+            <span>John Parker</span><span>/</span>
+            <span
+              ><i class="fa-regular fa-folder-closed pr-1 text-red-400"></i
+              >Politics</span
+            >
+          </div>
+          <div class="px-5 pt-3 pb-6">
+            <a href=""
+              ><h3 class="text-xl font-medium leading-snug mb-4 changetx">
+                Accusamus quaerat aliquam qui debitis facilis consequatur
+              </h3></a
+            >
+            <a
+              href="#"
+              class="text-sm text-gray-800 inline-flex items-center gap-1 changetx"
+              >Read More →</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hovereffs"
+        >
+          <div class="relative">
+            <img
+              src="./images/blogimage14.webp"
+              alt=""
+              class="w-full md:h-[400px] lg:h-[200px] object-cover hover:scale-105 transition-all duration-300"
+            />
+            <div
+              class="absolute bottom-[-30px] left-4 bg-red-500 text-white text-center rounded-md px-3 py-2 min-w-[56px]"
+            >
+              <div class="text-2xl font-semibold">30</div>
+              <div class="text-xs mt-1">April</div>
+            </div>
+          </div>
+          <div
+            class="px-5 pt-10 pb-1 flex items-center gap-2 text-sm text-gray-400"
+          >
+            <span>Julia White</span><span>/</span>
+            <span
+              ><i class="fa-regular fa-folder-closed pr-1 text-red-400"></i
+              >Culture</span
+            >
+          </div>
+          <div class="px-5 pt-3 pb-6">
+            <a href=""
+              ><h3 class="text-xl font-medium leading-snug mb-4 changetx">
+                Distinctio provident quibusdam numquam aperiam aut
+              </h3></a
+            >
+            <a
+              href="#"
+              class="text-sm text-gray-800 inline-flex items-center gap-1 changetx"
+              >Read More →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex items-center justify-center space-x-1 py-10 mb-10">
+      <a
+        href="blog.html"
+        class="px-4 py-2 text-red-500 border border-red-600 rounded-full hover:bg-red-500 hover:text-white"
+      >
+        <i class="fa-solid fa-angle-left"></i>
+      </a>
+      <a
+        href="blog.html"
+        class="px-4 py-2 text-red-500 border border-red-600 rounded-full hover:bg-red-500 hover:text-white"
+        >1</a
+      >
+      <a
+        href="blog.html"
+        class="px-4 py-2 text-red-500 border border-red-600 rounded-full bg-red-500 text-white bg-red-400"
+        >2</a
+      >
+      <a
+        href="blog.html"
+        class="px-4 py-2 text-red-500 border border-red-600 rounded-full hover:bg-red-500 hover:text-white"
+        >3</a
+      >
+      <a
+        href="blog.html"
+        class="px-4 py-2 text-red-500 border border-red-600 rounded-full hover:bg-red-500 hover:text-white"
+        >4</a
+      >
+      <span class="px-4 py-2 text-gray-700">...</span>
+
+      <a
+        href="blog.html"
+        class="px-4 py-2 text-red-500 border border-red-600 rounded-full hover:bg-red-500 hover:text-white"
+        >10</a
+      >
+
+      <a
+        href="blog.html"
+        class="px-4 py-2 text-red-500 border border-red-600 rounded-full hover:bg-red-500 hover:text-white"
+      >
+        <i class="fa-solid fa-angle-right"></i>
+      </a>
+    </section>
+
+    <footer class="bg-[#161616] text-white">
+      <div class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div>
+            <h2 class="text-3xl font-bold mb-5">TravelTime</h2>
+            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia curae. Donec velit neque auctor sit amet aliquam
+              vel ullamcorper sit amet ligula.
+            </p>
+            <p class="font-semibold text-base mb-3">Stay Updated</p>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="flex-1 bg-[#2a2a2a] border border-white/10 border-r-0 rounded-l-full px-4 py-2.5 text-sm text-white placeholder-gray-600 outline-none focus:border-[#e8412a]/50"
+              />
+              <button
+                class="bg-red-500 hover:bg-[#c93520] px-5 rounded-r-full transition-colors"
+              >
+                <i
+                  class="fa-regular fa-paper-plane text-white text-[20px] text-center"
+                ></i>
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <h5 class="text-base font-semibold mb-2">Company</h5>
+            <div class="w-8 h-0.5 bg-[#e8412a] mb-5"></div>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >Press</a
+                >
+              </li>
+              <li>
+                <a
+                  href="blog.html"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 class="text-base font-semibold mb-2">Solutions</h5>
+            <div class="w-8 h-0.5 bg-[#e8412a] mb-5"></div>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >Digital Strategy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >Cloud Computing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >Data Analytics</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >AI Solutions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"
+                  ><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i
+                  >Cybersecurity</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 class="text-base font-semibold mb-2">Get in Touch</h5>
+            <div class="w-8 h-0.5 bg-[#e8412a] mb-5"></div>
+
+            <div class="flex items-start gap-3 mb-4">
+              <div
+                class="w-10 h-10 rounded-full bg-[#444444]/20 flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fa-solid fa-location-dot text-red-500 text-sm"></i>
+              </div>
+              <span class="text-gray-400 text-sm leading-relaxed">
+                2847 Maple Avenue<br />
+                Los Angeles, CA 90210<br />
+                United States
+              </span>
+            </div>
+
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-10 h-10 rounded-full bg-[#444444]/20 flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fa-solid fa-phone text-red-500 text-sm"></i>
+              </div>
+              <span class="text-gray-400 text-sm">+1 (555) 987-6543</span>
+            </div>
+
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="w-10 h-10 rounded-full bg-[#444444]/20 flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fa-regular fa-envelope text-red-500 text-sm"></i>
+              </div>
+              <span class="text-gray-400 text-sm">contact@example.com</span>
+            </div>
+
+            <div class="flex gap-3">
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-gray-400 hover:bg-[#e8412a] hover:border-[#e8412a] hover:text-white transition-all text-sm"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-gray-400 hover:bg-[#e8412a] hover:border-[#e8412a] hover:text-white transition-all text-sm"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-gray-400 hover:bg-[#e8412a] hover:border-[#e8412a] hover:text-white transition-all text-sm"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-gray-400 hover:bg-[#e8412a] hover:border-[#e8412a] hover:text-white transition-all text-sm"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-gray-400 hover:bg-[#e8412a] hover:border-[#e8412a] hover:text-white transition-all text-sm"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#0f0f0f] border-t border-white/5">
+        <div
+          class="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-gray-500"
+        >
+          <p class="text-[12px]">
+            &copy; Copyright
+            <span class="text-white text-[12px] font-medium">MyWebsite</span>
+            All Rights Reserved
+          </p>
+          <div class="flex flex-col md:flex-row text-[12px] items-center gap-4">
+            <div class="flex gap-4">
+              <a href="#" class="hover:text-white transition-colors"
+                >Privacy Policy</a
+              >
+              <a href="#" class="hover:text-white transition-colors"
+                >Terms of Service</a
+              >
+              <a href="#" class="hover:text-white transition-colors"
+                >Cookie Policy</a
+              >
+            </div>
+            <p>
+              Designed by
+              <a
+                href="https://bootstrapmade.com"
+                class="text-[#e8412a] hover:underline"
+                >BootstrapMade</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
