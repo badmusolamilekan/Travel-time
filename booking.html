@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelTime – Navbar & Footer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      #menu-toggle { display: none; }
+      #menu-toggle:checked ~ #mobile-menu { display: block; }
+    </style>
+  </head>
+  <body>
+    <section class="relative h-[400px]">
+      <div
+        class="absolute bg-[url('./images/img1.JPG')] bg-cover bg-center inset-0 brightness-[60%]"
+      ></div>
+      <nav class="w-full justify-around relative z-10 top-0">
+        <div
+          class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-around"
+        >
+          <a
+            href="index.html"
+            class="text-white text-2xl font-medium font(sans:Poppins)"
+          >
+            TravelTime
+          </a>
+
+          <ul
+            class="hidden lg:flex items-center gap-1 text-sm font-medium text-white"
+          >
+            <li>
+              <a href="index.html" class="px-3 py-2 hover:text-[#e8412a] transition-colors">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="px-3 py-2 hover:text-[#e8412a] transition-colors">About</a>
+            </li>
+            <li>
+              <a href="destinations.html" class="px-3 py-2 hover:text-[#e8412a] transition-colors">Destinations</a>
+            </li>
+            <li>
+              <a href="tours.html" class="px-3 py-2 hover:text-[#e8412a] transition-colors">Tours</a>
+            </li>
+            <li>
+              <a href="gallery.html" class="px-3 py-2 hover:text-[#e8412a] transition-colors">Gallery</a>
+            </li>
+            <li>
+              <a href="blog.html" class="px-3 py-2 hover:text-[#e8412a] transition-colors">Blog</a>
+            </li>
+            <li>
+              <a href="booking.html" class="px-3 py-2 hover:text-[#e74c3c] transition-colors">Booking</a>
+            </li>
+            <li>
+              <a href="contact.html" class="px-3 py-2 text-white font-semibold">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Mobile hamburger -->
+          <label for="menu-toggle" class="lg:hidden text-white text-xl cursor-pointer">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" />
+        <div id="mobile-menu" class="hidden lg:hidden bg-black/80 px-6 py-4">
+          <ul class="flex flex-col gap-3 text-sm font-medium text-gray-300">
+            <li><a href="index.html" class="hover:text-[#e74c3c]">Home</a></li>
+            <li><a href="about.html" class="hover:text-[#e74c3c]">About</a></li>
+            <li><a href="destinations.html" class="hover:text-[#e74c3c]">Destinations</a></li>
+            <li><a href="tours.html" class="hover:text-[#e74c3c]">Tours</a></li>
+            <li><a href="gallery.html" class="hover:text-[#e74c3c]">Gallery</a></li>
+            <li><a href="blog.html" class="hover:text-[#e74c3c]">Blog</a></li>
+            <li><a href="booking.html" class="hover:text-[#e74c3c]">Booking</a></li>
+            <li><a href="contact.html" class="text-white font-semibold">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="p-6 md:p-20 absolute inset-0 text-white">
+        <h2 class="mt-20 text-center font-bold text-4xl">Booking</h2>
+        <p class="mt-5 text-center">
+          Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat
+          quibusdam quia assumenda numquam molestias.
+        </p>
+        <ul class="text-center mt-5">
+          <a href="" class="text-red-400">Home</a>
+          <a href="">/</a>
+          <a href="">Booking</a>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mx-4 md:mx-[50px] grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+      <!-- Left: Forms -->
+      <section class="w-full shadow-2xl p-5 md:p-8 mt-[60px] lg:mt-[100px] rounded-xl mb-10">
+
+        <form action="" class="w-full border-b border-gray-300 pb-8">
+          <h1 class="text-[24px] md:text-[30px] font-semibold">
+            Step 1: Select Tour & Travel Dates
+          </h1>
+          <p class="text-gray-400 text-[15px] md:text-[17px] mb-5">
+            Choose your preferred tour package and travel dates
+          </p>
+          <label for="tour" class="text-[18px] font-semibold">Tour Package</label>
+          <br />
+          <select name="" id="tour"
+            class="w-full border border-gray-400 rounded-lg text-gray-700 p-2 text-[16px] focus:border-red-500">
+            <option value="">Choose a tour package</option>
+            <option value="">European Discovery- 10 Days</option>
+            <option value="">Asian Adventure - 14 Days</option>
+            <option value="">African Safari - 12 Days</option>
+            <option value="">South American Explorer - 16 Days</option>
+          </select>
+          <div class="flex flex-col sm:flex-row mt-4 gap-5">
+            <div class="w-full sm:w-[50%]">
+              <label for="d1" class="text-[18px] font-semibold">Departure Date</label>
+              <br />
+              <input type="date" id="d1"
+                class="w-full border border-gray-400 rounded-lg p-2 text-[14px] focus:border-red-500" />
+            </div>
+            <div class="w-full sm:w-[50%]">
+              <label for="d2" class="text-[18px] font-semibold">Return Date</label>
+              <br />
+              <input type="date" id="d2"
+                class="w-full border border-gray-400 rounded-lg p-2 text-[14px] focus:border-red-500" />
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row mt-4 gap-5">
+            <div class="w-full sm:w-[50%]">
+              <label for="adult" class="text-[18px] font-semibold">Numbers of Adults</label>
+              <br />
+              <select name="" id="adult"
+                class="w-full border border-gray-400 rounded-lg p-2 text-[14px] focus:border-red-500">
+                <option value="">1 Adults</option>
+                <option value="">2 Adults</option>
+                <option value="">3 Adults</option>
+                <option value="">4 Adults</option>
+                <option value="">5+ Adults</option>
+              </select>
+            </div>
+            <div class="w-full sm:w-[50%]">
+              <label for="" class="text-[18px] font-semibold">Numbers of Children</label>
+              <br />
+              <select name="" id=""
+                class="w-full border border-gray-400 rounded-lg p-2 text-[14px] focus:border-red-500">
+                <option value="">No Children</option>
+                <option value="">1 Children</option>
+                <option value="">2 Children</option>
+                <option value="">3 Children</option>
+                <option value="">4+ Children</option>
+              </select>
+            </div>
+          </div>
+        </form>
+
+        <form action="" class="mt-10 border-b border-gray-300 pb-8">
+          <h1 class="text-[24px] md:text-[30px] font-semibold">
+            Step 2: Traveler Information
+          </h1>
+          <p class="text-gray-400 text-[15px] md:text-[17px] mb-5">
+            Please provide details for the primary traveler
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="w-full">
+              <label for="" class="text-[18px] font-semibold">First Name</label>
+              <br />
+              <input type="text"
+                class="w-full border border-gray-400 rounded-lg p-2 text-[14px] focus:border-red-500 focus:outline-none" />
+            </div>
+            <div class="w-full">
+              <label for="" class="text-[18px] font-semibold">Last Name</label>
+              <br />
+              <input type="text"
+                class="w-full border border-gray-400 rounded-lg p-2 text-[14px] focus:border-red-500 focus:outline-none" />
+            </div>
+            <div class="w-full">
+              <label for="" class="text-[18px] font-semibold">Email Address</label>
+              <br />
+              <input type="email"
+                class="w-full border border-gray-400 rounded-lg p-2 text-[14px] focus:border-red-500 focus:outline-none" />
+            </div>
+            <div class="w-full">
+              <label for="" class="text-[18px] font-semibold">Phone Number</label>
+              <br />
+              <input type="number"
+                class="w-full border border-gray-400 rounded-lg p-2 text-[14px] focus:border-red-500 focus:outline-none" />
+            </div>
+            <div class="w-full">
+              <label for="" class="text-[18px] font-semibold">Nationality</label>
+              <br />
+              <select name="" id=""
+                class="w-full border border-gray-400 rounded-lg p-2 text-[14px] focus:border-red-500 focus:outline-none">
+                <option value="">Select nationality</option>
+                <option value="">United States</option>
+                <option value="">Canada</option>
+                <option value="">United Kingdom</option>
+                <option value="">Australia</option>
+                <option value="">Germany</option>
+                <option value="">France</option>
+                <option value="">Others</option>
+              </select>
+            </div>
+            <div class="w-full">
+              <label for="" class="text-[18px] font-semibold">Passport Number</label>
+              <br />
+              <input type="number"
+                class="w-full border border-gray-400 rounded-lg p-2 text-[14px] focus:border-red-500 focus:outline-none" />
+            </div>
+          </div>
+          <div class="mt-4">
+            <label for="" class="text-[18px] font-semibold">Special Requests or Dietary Requirements</label>
+            <br />
+            <textarea name="" id=""
+              class="border w-full border-gray-400 rounded-lg p-2 text-[18px] focus:border-red-500 focus:outline-none h-[150px]"
+              placeholder="please let us know about any special requirements..."></textarea>
+          </div>
+        </form>
+
+        <form action="" class="border-b border-gray-400 pb-8 mt-6">
+          <h1 class="text-[24px] md:text-[30px] font-semibold">Step 3: Additional Options</h1>
+          <p class="text-gray-400 text-[14px]">
+            Enhance your travel experience with these optional services
+          </p>
+          <div class="mt-3">
+            <div class="relative border border-gray-400 p-3 rounded-lg items-center hover:border-red-500">
+              <label for="1" class="flex">
+                <input type="checkbox" id="1" class="accent-red-500" />
+                <div>
+                  <i class="fa-solid fa-shield-virus px-2 text-red-500 text-[25px]"></i>
+                  <span class="font-bold text-[20px] md:text-[25px]">Travel Insurance</span>
+                </div>
+                <p class="absolute top-2 right-8 font-bold text-red-500">+$89</p>
+              </label>
+              <p class="text-[15px] md:text-[18px] text-gray-400 ml-5">
+                Comprehensive coverage for your entire trip including medical
+                emergencies and trip cancellation.
+              </p>
+            </div>
+            <div class="relative border border-gray-400 p-3 mt-4 rounded-lg items-center hover:border-red-500">
+              <label for="2" class="flex">
+                <input type="checkbox" id="2" class="accent-red-500" />
+                <div>
+                  <i class="fa-solid fa-car-rear px-2 text-red-500 text-[25px]"></i>
+                  <span class="font-bold text-[20px] md:text-[25px]">Airport Transfer</span>
+                </div>
+                <p class="absolute top-2 right-8 font-bold text-red-500">+$45</p>
+              </label>
+              <p class="text-[15px] md:text-[18px] text-gray-400 ml-5">
+                Private airport pickup and drop-off service for a hassle-free
+                start and end to your journey.
+              </p>
+            </div>
+            <div class="relative border border-gray-400 p-3 mt-4 rounded-lg items-center hover:border-red-500">
+              <label for="3" class="flex">
+                <input type="checkbox" id="3" class="accent-red-500" />
+                <div>
+                  <i class="fa-solid fa-hotel px-2 text-red-500 text-[23px]"></i>
+                  <span class="font-bold text-[20px]">Hotel Upgrade</span>
+                </div>
+                <p class="absolute top-2 right-8 font-bold text-red-500">+$150</p>
+              </label>
+              <p class="text-[15px] md:text-[18px] text-gray-400 ml-5">
+                Upgrade to premium hotels with better amenities and locations
+                throughout your trip.
+              </p>
+            </div>
+            <div class="relative border border-gray-400 p-3 mt-4 rounded-lg items-center hover:border-red-500">
+              <label for="4" class="flex">
+                <input type="checkbox" id="4" class="accent-red-500" />
+                <div>
+                  <i class="fa-regular fa-id-badge px-2 text-red-500 text-[23px]"></i>
+                  <span class="font-bold text-[20px]">Private Guide</span>
+                </div>
+                <p class="absolute top-2 right-8 font-bold text-red-500">+$150</p>
+              </label>
+              <p class="text-[15px] md:text-[18px] text-gray-400 ml-5">
+                Personal tour guide for select destinations to provide exclusive
+                insights and personalized experience.
+              </p>
+            </div>
+          </div>
+        </form>
+
+        <form action="" class="p-2 border-b border-gray-300">
+          <h1 class="text-[24px] md:text-[30px] font-semibold">Step 4: Payment Information</h1>
+          <p class="text-[16px] md:text-[19px] text-gray-400">
+            Secure payment processing with 256-bit SSL encryption
+          </p>
+          <section class="grid grid-cols-1 sm:grid-cols-3 gap-5 p-2">
+            <div class="p-4 border border-red-500 rounded-lg bg-red-100/50">
+              <i class="fa-regular fa-credit-card text-[25px] text-red-500 block text-center mb-1"></i>
+              <p class="font-bold text-center">Credit/Debit Card</p>
+            </div>
+            <div class="p-6 border hover:border-red-500 border-gray-400 rounded-lg hover:bg-red-100/25 transition-all duration-300">
+              <i class="fa-brands fa-paypal text-[25px] text-red-500 block text-center mb-1"></i>
+              <p class="font-bold text-center">PayPal</p>
+            </div>
+            <div class="p-6 border hover:border-red-500 border-gray-400 rounded-lg hover:bg-red-100/25 transition-all duration-300">
+              <i class="fa-solid fa-building-columns text-[25px] text-red-500 block text-center mb-1"></i>
+              <p class="font-bold text-center">Bank Transfer</p>
+            </div>
+          </section>
+          <label for="card" class="font-bold text-[14px] ml-2 md:ml-5">Card Number</label>
+          <br />
+          <input type="number" id="card"
+            class="border border-gray-400 w-full md:w-[95%] rounded-lg p-2 focus:outline-none focus:border-red-500 text-[15px] h-[50px] md:ml-5"
+            placeholder="1234 5678 9012 3456" />
+          <div class="flex flex-col sm:flex-row my-6 md:my-10 gap-5 md:ml-5">
+            <div class="w-full sm:w-[62%]">
+              <label for="" class="font-bold text-[14px]">Cardholder Name</label>
+              <br />
+              <input type="text" placeholder="John Doe"
+                class="border border-gray-400 w-full rounded-lg p-2 focus:outline-none focus:border-red-500 text-[15px] h-[50px]" />
+            </div>
+            <div class="w-full sm:w-[30%]">
+              <label for="" class="font-bold text-[14px]">Expiry Date</label>
+              <br />
+              <input type="text" placeholder="MM/YY"
+                class="border border-gray-400 w-full rounded-lg p-2 focus:outline-none focus:border-red-500 text-[15px] h-[50px]" />
+            </div>
+          </div>
+          <label for="">CVV</label>
+          <input type="number" placeholder="123"
+            class="border border-gray-400 w-full sm:w-[190px] rounded-lg p-2 focus:outline-none focus:border-red-500 text-[15px] h-[50px] mb-5" />
+          <div>
+            <i class="fa-solid fa-shield text-red-400"></i>
+            <span class="text-[10px] font-semibold">Your payment information is secure and encrypted</span>
+          </div>
+        </form>
+
+        <form action="" class="mt-6">
+          <h1 class="text-[24px] md:text-[30px] font-semibold">
+            Step 5: Review & Confirmation
+          </h1>
+          <p class="text-gray-400 text-[16px] md:text-[18px] mb-5">
+            Please review your booking details before confirming
+          </p>
+          <label for="agree" class="flex">
+            <input type="checkbox" id="agree" class="accent-blue-700 mr-2" />
+            <p class="text-[16px]">
+              I agree to the
+              <a href="" class="text-red-500 underline">Terms and Conditions</a>
+              and
+              <a href="" class="text-red-500 underline">Privacy Policy</a>
+            </p>
+          </label>
+          <label for="sub" class="flex">
+            <input type="checkbox" id="sub" class="accent-blue-700 mr-2" />
+            <p class="text-[16px]">
+              Subscribe to our newsletter for exclusive travel deals and updates
+            </p>
+          </label>
+          <div class="flex justify-center mt-6">
+            <button class="p-3 bg-[#f95e4d] text-center rounded-full text-white font-bold w-full sm:w-auto px-10">
+              <i class="fa-regular fa-circle-check"></i>
+              Complete Booking
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Right: Sticky Summary -->
+      <section class="w-full lg:w-[80%] shadow-2xl p-8 mt-[30px] lg:mt-[70px] lg:top-[70px] lg:sticky lg:self-start lg:h-fit rounded-xl mb-10">
+        <div class="p-4 border-b border-gray-300 mb-4">
+          <h1 class="font-bold text-[24px]">Booking Summary</h1>
+        </div>
+        <div class="border-b border-gray-300 pb-6">
+          <div class="flex gap-3">
+            <img src="images/download (1).jfif" alt=""
+              class="w-[28%] h-[80px] rounded-xl object-cover" />
+            <div>
+              <p>European Discovery</p>
+              <p>10 Days • 8 Cities</p>
+              <div class="flex items-center gap-1 text-[8px] text-yellow-400">
+                <i class="fa-solid fa-star text-[10px]"></i>
+                <i class="fa-solid fa-star text-[10px]"></i>
+                <i class="fa-solid fa-star text-[10px]"></i>
+                <i class="fa-solid fa-star text-[10px]"></i>
+                <i class="fa-solid fa-star-half-stroke text-[10px]"></i>
+                <span class="text-black text-[10px] ml-1">4.8 (324 reviews)</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex mt-6 justify-between">
+            <div>
+              <p class="text-gray-400 text-[10px]">Departure Date:</p>
+              <p class="text-gray-400 text-[10px]">Return Date:</p>
+              <p class="text-gray-400 text-[10px]">Travelers:</p>
+            </div>
+            <div>
+              <p class="text-[10px] font-bold">March 15, 2024</p>
+              <p class="text-[10px] font-bold">March 25, 2024</p>
+              <p class="text-[10px] font-bold">2 Adults</p>
+            </div>
+          </div>
+        </div>
+        <div class="border-b border-gray-300 pb-6 mt-4">
+          <p class="font-bold text-[19px] mb-2">Price Breakdown</p>
+          <div class="grid grid-cols-2 gap-4 justify-between">
+            <p class="text-[10px] text-gray-500">Tour Package (2 adults)</p>
+            <p class="font-bold text-[10px] ml-[80px]">$2,980</p>
+            <p class="text-[10px] text-gray-500">Travel Insurance</p>
+            <p class="font-bold text-[10px] ml-[80px]">$89</p>
+            <p class="text-[10px] text-gray-500">Airport Transfer</p>
+            <p class="font-bold text-[10px] ml-[80px]">$45</p>
+            <p class="text-[10px] text-gray-500">Taxes & Fees</p>
+            <p class="font-bold text-[10px] ml-[80px]">$156</p>
+          </div>
+        </div>
+        <div class="mt-4">
+          <div class="flex justify-between">
+            <p class="font-bold text-[19px]">Total Amount</p>
+            <p class="font-bold text-[22px]">$3,270</p>
+          </div>
+          <div class="mt-8">
+            <i class="fa-solid fa-shield-virus px-2 text-red-500 text-[8px]"></i>
+            <span class="text-[10px] text-gray-500"> SSL Secured</span> <br />
+            <i class="fa-regular fa-credit-card text-[8px] px-2 text-red-500"></i>
+            <span class="text-[10px] text-gray-500">All major cards accepted</span>
+          </div>
+          <div class="mt-8">
+            <p class="font-bold text-[19px]">Need Help?</p>
+            <p class="text-[10px] text-gray-500">Our travel experts are here to assist you</p>
+            <p class="text-[16px] text-gray-500 mt-3">
+              <i class="fa-solid fa-phone text-red-500 px-2"></i>+1 (555) 123-4567
+            </p>
+            <p class="text-[16px] text-gray-500 mt-3">
+              <i class="fa-regular fa-envelope text-red-500 px-2"></i>support@example.com
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <a href="About.html"
+      class="fixed bottom-4 right-4 bg-[#e74c3c] hover:bg-[#c0392b] w-10 h-10 rounded-full flex items-center justify-center text-white transition-colors shadow-lg">
+      <i class="fa-solid fa-arrow-up text-sm"></i>
+    </a>
+
+    <footer class="bg-[#161616] text-white">
+      <div class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div>
+            <h2 class="text-3xl font-bold mb-5">TravelTime</h2>
+            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia curae. Donec velit neque auctor sit amet aliquam
+              vel ullamcorper sit amet ligula.
+            </p>
+            <p class="font-semibold text-base mb-3">Stay Updated</p>
+            <div class="flex">
+              <input type="email" placeholder="Enter your email"
+                class="flex-1 bg-[#2a2a2a] border border-white/10 border-r-0 rounded-l-full px-4 py-2.5 text-sm text-white placeholder-gray-600 outline-none focus:border-[#e8412a]/50" />
+              <button class="bg-red-500 hover:bg-[#c93520] px-5 rounded-r-full transition-colors">
+                <i class="fa-regular fa-paper-plane text-white text-[20px] text-center"></i>
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <h5 class="text-base font-semibold mb-2">Company</h5>
+            <div class="w-8 h-0.5 bg-[#e8412a] mb-5"></div>
+            <ul class="space-y-3">
+              <li><a href="about.html" class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i>About</a></li>
+              <li><a href="#" class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i>Careers</a></li>
+              <li><a href="#" class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i>Press</a></li>
+              <li><a href="blog.html" class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i>Blog</a></li>
+              <li><a href="contact.html" class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i>Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 class="text-base font-semibold mb-2">Solutions</h5>
+            <div class="w-8 h-0.5 bg-[#e8412a] mb-5"></div>
+            <ul class="space-y-3">
+              <li><a href="#" class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i>Digital Strategy</a></li>
+              <li><a href="#" class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i>Cloud Computing</a></li>
+              <li><a href="#" class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i>Data Analytics</a></li>
+              <li><a href="#" class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i>AI Solutions</a></li>
+              <li><a href="#" class="text-gray-400 text-sm hover:text-[#e8412a] flex items-center gap-2 transition-colors"><i class="fa-solid fa-chevron-right text-red-400 text-xs"></i>Cybersecurity</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 class="text-base font-semibold mb-2">Get in Touch</h5>
+            <div class="w-8 h-0.5 bg-[#e8412a] mb-5"></div>
+            <div class="flex items-start gap-3 mb-4">
+              <div class="w-10 h-10 rounded-full bg-[#444444]/20 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-location-dot text-red-500 text-sm"></i>
+              </div>
+              <span class="text-gray-400 text-sm leading-relaxed">2847 Maple Avenue<br />Los Angeles, CA 90210<br />United States</span>
+            </div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-full bg-[#444444]/20 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-phone text-red-500 text-sm"></i>
+              </div>
+              <span class="text-gray-400 text-sm">+1 (555) 987-6543</span>
+            </div>
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-10 h-10 rounded-full bg-[#444444]/20 flex items-center justify-center flex-shrink-0">
+                <i class="fa-regular fa-envelope text-red-500 text-sm"></i>
+              </div>
+              <span class="text-gray-400 text-sm">contact@example.com</span>
+            </div>
+            <div class="flex gap-3 flex-wrap">
+              <a href="#" class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-gray-400 hover:bg-[#e8412a] hover:border-[#e8412a] hover:text-white transition-all text-sm"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-gray-400 hover:bg-[#e8412a] hover:border-[#e8412a] hover:text-white transition-all text-sm"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-gray-400 hover:bg-[#e8412a] hover:border-[#e8412a] hover:text-white transition-all text-sm"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-gray-400 hover:bg-[#e8412a] hover:border-[#e8412a] hover:text-white transition-all text-sm"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-gray-400 hover:bg-[#e8412a] hover:border-[#e8412a] hover:text-white transition-all text-sm"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#0f0f0f] border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-gray-500">
+          <p class="text-[12px]">&copy; Copyright <span class="text-white text-[12px] font-medium">MyWebsite</span> All Rights Reserved</p>
+          <div class="flex flex-col md:flex-row text-[12px] items-center gap-4">
+            <div class="flex flex-wrap justify-center gap-4">
+              <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+              <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
+            </div>
+            <p>Designed by <a href="https://bootstrapmade.com" class="text-[#e8412a] hover:underline">BootstrapMade</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
