@@ -1,0 +1,7 @@
+.hovereff:hover .changebg{
+    background-color: rgb(244, 92, 92);
+    color: white;
+}
+.hovereffs:hover .changetx{
+    color: red;
+}
